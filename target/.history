@@ -1,0 +1,100 @@
+run
+exit
+tasks
+run
+show java-home
+exit
+compile
+exit
+compile
+run
+ls
+exot
+exit
+compile
+tasks
+clean-files
+compile
+run
+ls
+exit
+compile
+run
+exit
+compile
+run
+exit
+compile
+run
+exit
+compile
+rum
+run
+exit
+compile
+run
+ls
+exit
+compile
+exit
+compile
+exit
+show dependency-classpath
+reload plugins
+exit
+show sbtPlugin
+show sbt-plugin
+exit
+console
+exit
+console
+exit
+show Keys
+show test
+help
+help about
+about
+help show
+show setting
+show settings
+show module-settings
+show state
+help
+session
+show session
+help session
+help
+!L
+!:
+help
+reload
+help reload
+reload exit
+reload return
+reload plugins
+reload return
+help
+projects
+- compile
+inspect dependency-library
+inspect dependency-classpath
+alias
+tasks
+thrift-version
+show thrift-versin
+show thrift-version
+thrift-js-options
+exit
+show log-level
+show trace-level
+show log-buffered
+exit
+show package-bin
+show package-dist
+exit
+clean clean-files
+clean clean-file
+clean
+clean-files
+tasks
+exit
