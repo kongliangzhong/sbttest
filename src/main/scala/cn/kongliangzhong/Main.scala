@@ -5,12 +5,19 @@ import net.lag.configgy.Configgy
 import net.lag.logging.Logger
 import cn.kongliangzhong.guice.GuiceTest
 import cn.kongliangzhong.twitter.LogTest
+import cn.kongliangzhong.scala._
 
 object Main {
 
   def main(args: Array[String]): Unit = {
     //guiceTest
-    twitterLog
+    //twitterLog
+//    basicTest
+    new TypeParamTest().test
+  }
+
+  private def basicTest {
+    new BasicTest().test
   }
 
   private def guiceTest {
