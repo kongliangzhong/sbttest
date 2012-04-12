@@ -152,7 +152,7 @@ object Library {
 }
 
 
-object Customer extends Application {
-  def getTitle(p: Publication): String = p.title
-  Library.printBookList(getTitle)
-}
+// object Customer extends Application {
+//   def getTitle(p: Publication): String = p.title
+//   Library.printBookList(getTitle)
+// }

@@ -2,7 +2,12 @@ package cn.kongliangzhong.scala
 
 class BasicTest {
   def test {
-    tupleTest
+    utilTest
+  }
+
+  private def utilTest {
+    for(i <- 0 until 10 by 2)
+      println(i + "")
   }
 
   private def tupleTest {
@@ -18,4 +23,31 @@ class BasicTest {
     println(tuple3._1 + " : " + tuple3._2 )
     println("tuple test end  --------------")
   }
+}
+
+
+object FileMatcher {
+  private val filesHere = (new java.io.File(".")).listFiles
+
+  def filesEnding(query: String) =
+    for(file <- filesHere; if(file.getName.endsWith(query)))
+      yield file.getName
+
+  def filesContaining(query: String) =
+    for(file <- filesHere; if(file.getName.contains(query)))
+      yield file.getName
+
+  def filesRegex(query: String) =
+    for(file <- filesHere; if(file.getName.matches(query)))
+      yield file.getName
+
+  def filesMatching(matcher: String => Boolean) =
+    for(file <- filesHere; if(matcher(file.getName)))
+      yield file.getName
+
+  def filesEnding2(query: String) =
+    filesMatching(_.endsWith(query))
+
+  def filesContaining2(query: String) =
+    filesMatching(_.contains(query))
 }
